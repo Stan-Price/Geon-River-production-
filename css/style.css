@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 @charset "UTF-8";
 
@@ -1845,4 +1845,4 @@ h6 {
   }
 }
 
-.webp .main-block{ background: url(../img/mainblock/bg.webp) center/cover no-repeat; }
+.webp .main-block{ background: url('../img/mainblock/bg.webp') center/cover no-repeat; }
