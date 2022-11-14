@@ -1245,7 +1245,7 @@ h6 {
   }
 
   .main-block {
-    margin-top: 12.5rem;
+    padding-top: 12.5rem;
   }
 }
 
@@ -1547,7 +1547,7 @@ h6 {
 
 @media (max-width: 49.0625em) {
   .main-block {
-    margin-top: 18.75rem;
+    padding-top: 18.75rem;
   }
 }
 
@@ -1791,15 +1791,15 @@ h6 {
 }
 
 @media (min-width: 49.0625em) and (max-width: 160em) {
-@supports (margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
+@supports (padding-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
     .main-block {
-      margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem );
+      padding-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem );
     }
 }
 
-@supports not (margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
+@supports not (padding-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
     .main-block {
-      margin-top: calc(18.75rem + -6.25 * (100vw - 49.0625rem) / 110.9375);
+      padding-top: calc(18.75rem + -6.25 * (100vw - 49.0625rem) / 110.9375);
     }
 }
 }
