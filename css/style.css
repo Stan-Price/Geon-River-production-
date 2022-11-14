@@ -273,9 +273,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.25rem;
@@ -1071,10 +1070,6 @@ h6 {
   padding: 1.875rem 0px;
 }
 
-.page_home {
-  margin: 0px 0px 12.5rem 0px;
-}
-
 .page__inner {
   padding-top: 10rem;
 }
@@ -1247,6 +1242,10 @@ h6 {
 
   .menu-top-header__link {
     font-size: 1.5rem;
+  }
+
+  .main-block {
+    margin-top: 12.5rem;
   }
 }
 
@@ -1546,6 +1545,12 @@ h6 {
   }
 }
 
+@media (max-width: 49.0625em) {
+  .main-block {
+    margin-top: 18.75rem;
+  }
+}
+
 @media (max-width: 47.99875em) {
   .header-product__line {
     -ms-flex-wrap: wrap;
@@ -1781,6 +1786,20 @@ h6 {
 @supports not (font-size: clamp( 2.25rem , 1.4446308725rem  +  4.0268456376vw , 3.375rem )) {
     .menu-top-header__link {
       font-size: calc(2.25rem + 1.125 * (100vw - 20rem) / 27.9375);
+    }
+}
+}
+
+@media (min-width: 49.0625em) and (max-width: 160em) {
+@supports (margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
+    .main-block {
+      margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem );
+    }
+}
+
+@supports not (margin-top: clamp( 12.5rem , 21.514084507rem  +  -5.6338028169vw , 18.75rem )) {
+    .main-block {
+      margin-top: calc(18.75rem + -6.25 * (100vw - 49.0625rem) / 110.9375);
     }
 }
 }
