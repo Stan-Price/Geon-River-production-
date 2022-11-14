@@ -1190,10 +1190,6 @@ h6 {
   }
 
   .main-block {
-    padding-top: 18.75rem;
-  }
-
-  .main-block {
     padding-bottom: 3.75rem;
   }
 
@@ -1247,6 +1243,10 @@ h6 {
 
   .menu-top-header__link {
     font-size: 1.5rem;
+  }
+
+  .main-block {
+    padding-top: 12.5rem;
   }
 }
 
@@ -1478,10 +1478,6 @@ h6 {
   }
 
   .main-block {
-    padding-top: 18.75rem;
-  }
-
-  .main-block {
     padding-bottom: 1.25rem;
   }
 
@@ -1547,6 +1543,12 @@ h6 {
 
   .top-header__location span {
     display: none;
+  }
+}
+
+@media (max-width: 49.0625em) {
+  .main-block {
+    padding-top: 25rem;
   }
 }
 
@@ -1641,18 +1643,6 @@ h6 {
 @supports not (gap: clamp( 0.625rem , 0.5702054795rem  +  0.2739726027vw , 0.9375rem )) {
     .top-header__callback {
       gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 114.0625);
-    }
-}
-
-@supports (padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
-    .main-block {
-      padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem );
-    }
-}
-
-@supports not (padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
-    .main-block {
-      padding-top: calc(18.75rem + 0 * (100vw - 20rem) / 114.0625);
     }
 }
 
@@ -1797,6 +1787,20 @@ h6 {
 @supports not (font-size: clamp( 2.25rem , 1.4446308725rem  +  4.0268456376vw , 3.375rem )) {
     .menu-top-header__link {
       font-size: calc(2.25rem + 1.125 * (100vw - 20rem) / 27.9375);
+    }
+}
+}
+
+@media (min-width: 49.0625em) and (max-width: 160em) {
+@supports (padding-top: clamp( 12.5rem , 30.5281690141rem  +  -11.2676056338vw , 25rem )) {
+    .main-block {
+      padding-top: clamp( 12.5rem , 30.5281690141rem  +  -11.2676056338vw , 25rem );
+    }
+}
+
+@supports not (padding-top: clamp( 12.5rem , 30.5281690141rem  +  -11.2676056338vw , 25rem )) {
+    .main-block {
+      padding-top: calc(25rem + -12.5 * (100vw - 49.0625rem) / 110.9375);
     }
 }
 }
