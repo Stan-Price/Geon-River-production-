@@ -531,7 +531,7 @@ h6 {
 
 .footer__top {
   background-color: #17213c;
-  padding: 30px 0px;
+  padding: 1.875rem 0px;
 }
 
 .footer__row {
@@ -574,15 +574,30 @@ h6 {
 }
 
 .footer__bottom {
-  padding: 25px 0px;
+  padding: 1.5625rem 0px;
 }
 
 .footer__copy {
+  text-align: center;
   color: #737373;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.2px;
   line-height: 1.7142857143;
+}
+
+.footer__copy:not(:last-child) {
+  margin: 0px 0px 0.625rem 0px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25rem;
 }
 
 .menu-footer .menu-footer__item:not(:last-child) {
@@ -631,20 +646,6 @@ h6 {
 
 .contacts-footer__item:hover {
   text-decoration: underline;
-}
-
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 0px 0px 34px;
-}
-
-.social__item:not(:last-child) {
-  margin: 0px 20px 0px 0px;
 }
 
 .no-webp .main-block{
@@ -1123,20 +1124,6 @@ h6 {
 
 .swiper-button-lock {
   display: none !important;
-}
-
-@media (min-width: 29.99875em) {
-  .footer .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 @media (min-width: 47.99875em) {
