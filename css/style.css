@@ -207,8 +207,7 @@ h6 {
 }
 
 .header-block__title {
-  font-weight: 7000;
-  font-size: 40px;
+  font-weight: 700;
   color: rgb(0, 132, 255);
   letter-spacing: 0.2px;
   line-height: 2.5;
@@ -1165,6 +1164,10 @@ h6 {
 }
 
 @media (min-width: 134.0625em) {
+  .header-block__title {
+    font-size: 2.5rem;
+  }
+
   .main-products {
     margin-bottom: 3.75rem;
   }
@@ -1449,6 +1452,10 @@ h6 {
 }
 
 @media (max-width: 20em) {
+  .header-block__title {
+    font-size: 1.5rem;
+  }
+
   .main-products {
     margin-bottom: 1.875rem;
   }
@@ -1568,6 +1575,18 @@ h6 {
 }
 
 @media (min-width: 20em) and (max-width: 134.0625em) {
+@supports (font-size: clamp( 1.5rem , 1.3246575342rem  +  0.8767123288vw , 2.5rem )) {
+    .header-block__title {
+      font-size: clamp( 1.5rem , 1.3246575342rem  +  0.8767123288vw , 2.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.3246575342rem  +  0.8767123288vw , 2.5rem )) {
+    .header-block__title {
+      font-size: calc(1.5rem + 1 * (100vw - 20rem) / 114.0625);
+    }
+}
+
 @supports (margin-bottom: clamp( 1.875rem , 1.5462328767rem  +  1.6438356164vw , 3.75rem )) {
     .main-products {
       margin-bottom: clamp( 1.875rem , 1.5462328767rem  +  1.6438356164vw , 3.75rem );
