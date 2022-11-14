@@ -1190,7 +1190,7 @@ h6 {
   }
 
   .main-block {
-    padding-top: 12.5rem;
+    padding-top: 18.75rem;
   }
 
   .main-block {
@@ -1478,7 +1478,7 @@ h6 {
   }
 
   .main-block {
-    padding-top: 12.5rem;
+    padding-top: 18.75rem;
   }
 
   .main-block {
@@ -1644,15 +1644,15 @@ h6 {
     }
 }
 
-@supports (padding-top: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
+@supports (padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
     .main-block {
-      padding-top: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem );
+      padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem );
     }
 }
 
-@supports not (padding-top: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
+@supports not (padding-top: clamp( 18.75rem , 18.75rem  +  0vw , 18.75rem )) {
     .main-block {
-      padding-top: calc(12.5rem + 0 * (100vw - 20rem) / 114.0625);
+      padding-top: calc(18.75rem + 0 * (100vw - 20rem) / 114.0625);
     }
 }
 
