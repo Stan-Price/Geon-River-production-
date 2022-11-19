@@ -4028,80 +4028,6 @@
                 }
             }
         });
-        if (document.querySelector(".products-slider")) new core(".products-slider__slider ", {
-            modules: [ Navigation, Pagination, Autoplay ],
-            observer: true,
-            watchOverflow: true,
-            observeParents: true,
-            slidesPerView: 4,
-            spaceBetween: 30,
-            parallax: true,
-            speed: 800,
-            autoplay: {
-                delay: 3e3,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".products-slider__dotts",
-                clickable: true
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                1378: {
-                    slidesPerView: 4,
-                    spaceBetween: 30
-                }
-            },
-            on: {}
-        });
-        if (document.querySelector(".products-new")) new core(".products-new__slider", {
-            modules: [ Navigation, Pagination, Autoplay ],
-            observer: true,
-            watchOverflow: true,
-            observeParents: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
-            parallax: true,
-            speed: 800,
-            autoplay: {
-                delay: 3e3,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".products-new__dotts",
-                clickable: true
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                992: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                1330: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                }
-            },
-            on: {}
-        });
         if (document.querySelector(".images-product__thumbs")) {
             const thumbsSwiper = new core(".images-product__thumbs", {
                 modules: [ Navigation, Pagination, Autoplay, Thumb ],
@@ -4115,6 +4041,10 @@
                 pagination: {
                     el: ".products-new__dotts",
                     clickable: true
+                },
+                navigation: {
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next"
                 },
                 breakpoints: {
                     992: {
@@ -4240,6 +4170,10 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    let box = document.querySelectorAll(".produce__box");
+    box.forEach((popup => popup.addEventListener("click", (() => {
+        popup.classList.toggle("active");
+    }))));
     window["FLS"] = true;
     isWebp();
     menuInit();
