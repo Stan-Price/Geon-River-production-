@@ -266,6 +266,7 @@ h6 {
   bottom: 0;
   left: 0;
   background: #dfdddd;
+  margin-top: 1.875rem;
 }
 
 .main-products__body-cards {
@@ -1388,6 +1389,18 @@ section {
   }
 }
 
+@media (min-width: 1023.97px) {
+  .main-products {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-products {
+    margin: 13.75rem 0px 0px 0px;
+  }
+}
+
 @media (min-width: 95em) {
   .actions-product__buttons {
     -webkit-box-pack: end;
@@ -1403,12 +1416,6 @@ section {
 
   .menu-top-header__link {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 2559.97px) {
-  .main-products {
-    margin: 1.875rem 0px 0px 0px;
   }
 }
 
