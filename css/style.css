@@ -1577,6 +1577,13 @@ video {
   }
 }
 
+@media (max-width: 320px) {
+  video {
+    width: 25%;
+    height: 25%;
+  }
+}
+
 @media (max-width: 71.75em) {
   .menu-top-header__list:not(:last-child) {
     gap: 1.25rem;
