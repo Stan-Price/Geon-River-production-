@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"HomePage"
-})
+
+<head>
+	<title>Geon River</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221201130733">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container container">
+					<div href="#" class="top-header__logo logo">
+						<picture><source srcset="img/logo/GR.webp" type="image/webp"><img class="logo__image" src="img/logo/GR.png" alt="logo"></picture>
+					</div>
+					<nav class="top-header__menu menu-top-header">
+						<ul data-da=".menu__body,767" class="menu-top-header__list">
+							<li class="menu-top-header__item"><a href="https://stan-price.github.io/Geon-River-production-/home.html" class="menu-top-header__link">Home</a></li>
+							<li class="menu-top-header__item"><a href="https://stan-price.github.io/Geon-River-production-/home.html#whoweare" class="menu-top-header__link">About
+									Us</a>
+							</li>
+							<li class="menu-top-header__item"><a href="https://stan-price.github.io/Geon-River-production-/home.html#ourproducts" class="menu-top-header__link">Our
+									Products</a></li>
+							<li class="menu-top-header__item"><a href="https://stan-price.github.io/Geon-River-production-/home.html#contacts" class="menu-top-header__link">Contacts</a>
+							</li>
+						</ul>
+					</nav>
+
+					<a href="#" class="top-header__location _icon-location"><span>Chernihiv, Ukraine</span></a>
+					<a href="tel:380981791011" class="top-header__callback _icon-footer-phone"><span>+38 098 179 10
+							11</span></a>
+					<select class="lang__change">
+						<option value="ua">UA</option>
+						<option value="en" selected>EN</option>
+						<option value="ru">RU</option>
+					</select>
+
+					<nav hidden class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<div class="menu__body">
+
+						</div>
+					</nav>
+				</div>
+		</header>
 
 		<main class="page page_home">
 			<div class="page__main-block main-block">
-				<video src="@img/video/TimberProduce.mp4" muted autoplay loop class="video-slider"></video>
+				<video src="img/video/TimberProduce.mp4" muted autoplay loop class="video-slider"></video>
 				<div class="main-block__container">
 					<div class="main-block__body">
 						<div class="main-block__slider swiper">
@@ -81,22 +124,20 @@
 							</div>
 							<div class="main-block__buttons">
 								<a href="tel:380981791011" class="main-block__button button">Call Us</a>
-								<a href="https://stan-price.github.io/Geon-River-production-/home.html#whoweare"
-									class="main-block__button main-block__button_other">About
+								<a href="https://stan-price.github.io/Geon-River-production-/home.html#whoweare" class="main-block__button main-block__button_other">About
 									Us</a>
 							</div>
 							<div class="main-block__controll controll-main-block">
 								<div class="controll-main-block__dotts"></div>
 								<div class="controll-main-block__fraction fraction-controll">
-									<span class="fraction-controll__current">0</span> / <span
-										class="fraction-controll__all">0</span>
+									<span class="fraction-controll__current">0</span> / <span class="fraction-controll__all">0</span>
 								</div>
 							</div>
 						</div>
 						<!-- <div class="main-block__media media-main-block">
 							<div class="media-main-block__body">
 								<div class="media-main-block__image">
-									<img src="@img/mainblock/cover.jpg" alt="cover">
+									<picture><source srcset="img/mainblock/cover.webp" type="image/webp"><img src="img/mainblock/cover.jpg" alt="cover"></picture>
 								</div>
 							</div>
 						</div> -->
@@ -113,9 +154,8 @@
 					<div class="main-products__body-cards body-cards">
 						<div class="body-cards__item item">
 							<span class="item__image">
-								<a href="https://stan-price.github.io/Geon-River-production-/product_timber.html"
-									class="item__link">
-									<img href="" src="@img/products/1.jpg" alt="timber">
+								<a href="https://stan-price.github.io/Geon-River-production-/product_timber.html" class="item__link">
+									<picture><source srcset="img/products/1.webp" type="image/webp"><img href="" src="img/products/1.jpg" alt="timber"></picture>
 								</a>
 							</span>
 							<div class="item__info info-item">
@@ -125,9 +165,8 @@
 						</div>
 						<div class="body-cards__item item">
 							<span class="item__image">
-								<a href="https://stan-price.github.io/Geon-River-production-/product_pallets.html"
-									class="item__link">
-									<img src="@img/products/2.jpg" alt="pallets">
+								<a href="https://stan-price.github.io/Geon-River-production-/product_pallets.html" class="item__link">
+									<picture><source srcset="img/products/2.webp" type="image/webp"><img src="img/products/2.jpg" alt="pallets"></picture>
 								</a>
 							</span>
 							<div class="item__info info-item">
@@ -136,9 +175,8 @@
 						</div>
 						<div class="body-cards__item item">
 							<span class="item__image">
-								<a href="https://stan-price.github.io/Geon-River-production-/product_pellets.html"
-									class="item__link">
-									<img src="@img/products/3.jpg" alt="pellets">
+								<a href="https://stan-price.github.io/Geon-River-production-/product_pellets.html" class="item__link">
+									<picture><source srcset="img/products/3.webp" type="image/webp"><img src="img/products/3.jpg" alt="pellets"></picture>
 								</a>
 							</span>
 							<div class="item__info info-item">
@@ -147,9 +185,8 @@
 						</div>
 						<div class="body-cards__item item">
 							<span class="item__image">
-								<a href="https://stan-price.github.io/Geon-River-production-/product_ruf.html"
-									class="item__link">
-									<img src="@img/products/4.jpg" alt="ruf-briquettes">
+								<a href="https://stan-price.github.io/Geon-River-production-/product_ruf.html" class="item__link">
+									<picture><source srcset="img/products/4.webp" type="image/webp"><img src="img/products/4.jpg" alt="ruf-briquettes"></picture>
 								</a>
 							</span>
 							<div class="item__info info-item">
@@ -184,7 +221,7 @@
 							<div class="whoweare__items">
 								<div class="whoweare__item item-whoweare">
 									<div class="item-whoweare__icon">
-										<img src="@img/whoweare/01.svg" alt="whoweare_01">
+										<img src="img/whoweare/01.svg" alt="whoweare_01">
 									</div>
 									<div class="item-whoweare__body">
 										<div class="item-whoweare__title">Personal</div>
@@ -198,7 +235,7 @@
 								</div>
 								<div class="whoweare__item item-whoweare">
 									<div class="item-whoweare__icon">
-										<img src="@img/whoweare/02.svg" alt="whoweare_02">
+										<img src="img/whoweare/02.svg" alt="whoweare_02">
 									</div>
 									<div class="item-whoweare__body">
 										<div class="item-whoweare__title">Equipment</div>
@@ -246,10 +283,77 @@
 		</main>
 
 
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="footer__main container">
+					<div class="footer__row">
+						<div class="footer__column">
+							<div class="footer__lable">Company Info</div>
+							<nav class="footer__menu menu-footer">
+								<ul class="menu-footer__list">
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">About Us</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Carrier</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">We are hiring</a>
+									</li>
+									<li class="menu-footer__item">
+										<a href="" class="menu-footer__link">Blog</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__column">
+							<div id="contacts" class="footer__lable">Get In Touch</div>
+							<div class="footer__contacts contacts-footer">
+								<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)555-0103</a>
+								<a href="#" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.
+									Manchester, Kentucky 39495</a>
+								<a href="maito:debra.holt@example.com" class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="footer__container container">
+					<div class="footer__copy">Made With Love By Stan Price Studio</div>
+					<div class="footer__social social">
+						<a href="" class="social__item">
+							<img src="img/social/01.svg" alt="Facebook">
+						</a>
+						<a href="" class="social__item">
+							<img src="img/social/02.svg" alt="Instagramm">
+						</a>
+						<a href="" class="social__item">
+							<img src="img/social/03.svg" alt="Twitter">
+						</a>
+						<a href="" class="social__item">
+							<img src="img/social/04.svg" alt="YouTube">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+</body>
+
+</html>
+</div>
+<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+<script src="js/app.min.js?_v=20221201130733"></script>
 
 </body>
 
