@@ -4006,10 +4006,10 @@
             slidesPerView: 1,
             spaceBetween: 50,
             parallax: true,
-            speed: 1400,
+            speed: 5e3,
             loop: true,
             autoplay: {
-                delay: 4e3,
+                delay: 8e3,
                 disableOnInteraction: false
             },
             pagination: {
