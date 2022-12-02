@@ -834,22 +834,22 @@ video {
 .swiper-slide__title {
   font-weight: 900;
   letter-spacing: 0.03em;
-  font-size: 1.5rem;
-  line-height: 1.3333333333;
+  font-size: 3.125rem;
+  line-height: 1.0869565217;
 }
 
 .swiper-slide__title:not(:last-child) {
-  margin-bottom: 0.625em;
+  margin-bottom: 0.3260869565em;
 }
 
 .swiper-slide__sub-title {
   font-weight: 500;
-  line-height: 1.3125;
-  font-size: 1rem;
+  line-height: 1.15625;
+  font-size: 2rem;
 }
 
 .swiper-slide__sub-title:not(:last-child) {
-  margin-bottom: 1.875em;
+  margin-bottom: 0.9375em;
 }
 
 .controll-main-block__fraction {
@@ -1123,19 +1123,19 @@ video {
 
 @media (min-width: 47.99875em) {
   .swiper-slide__title {
-    font-size: 3.375rem;
-    line-height: 1.3333333333;
-    margin-bottom: 0.2777777778em;
+    font-size: 3.125rem;
+    line-height: 1.36;
+    margin-bottom: 0.3em;
   }
 
   .swiper-slide__sub-title {
     font-weight: 500;
-    line-height: 1.2777777778;
-    font-size: 2.25rem;
+    line-height: 1.2941176471;
+    font-size: 1.875rem;
   }
 
   .swiper-slide__sub-title:not(:last-child) {
-    margin-bottom: 0.8333333333em;
+    margin-bottom: 0.8823529412em;
   }
 
   .table-product {
@@ -1498,6 +1498,12 @@ video {
   }
 }
 
+@media (max-width: 63.998125em) {
+  .main-block {
+    padding: 6.25rem 0px 0px 0px;
+  }
+}
+
 @media (max-width: 61.99875em) {
   .top-header__callback::before {
     font-size: 2.1875rem;
@@ -1564,10 +1570,6 @@ video {
 
   .lang__change {
     font-size: 1.5rem;
-  }
-
-  .main-block {
-    padding: 6.25rem 0px 0px 0px;
   }
 
   .main-block__button {
