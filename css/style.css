@@ -342,6 +342,7 @@ h6 {
 .whoweare {
   padding: 3.75rem 0px 1.875rem 0px;
   background-color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .whoweare__video {
@@ -511,6 +512,97 @@ h6 {
   transition: 1s;
 }
 
+.findUs {
+  margin-bottom: 30px;
+}
+
+.findUs__container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #363953;
+}
+
+.findUs__contactAndMap {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.09375rem;
+  border-radius: 6px;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.findUs__map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.contact-form__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-form__form {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form__form input,
+.contact-form__form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.contact-form__textarea {
+  resize: none;
+  height: 200px;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.send-button:hover {
+  background-color: rgb(117, 186, 252);
+  -webkit-transition: 0.3s all linear;
+  -o-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
 .icon-menu {
   display: none;
 }
@@ -576,6 +668,7 @@ h6 {
 }
 
 .logo__image {
+  padding: 0.3125rem;
   width: 5.625rem;
   height: 5.625rem;
 }
@@ -1135,7 +1228,7 @@ video {
   }
 
   .swiper-slide__sub-title:not(:last-child) {
-    margin-bottom: 0.8823529412em;
+    margin-bottom: 0.5882352941em;
   }
 
   .table-product {
@@ -1303,6 +1396,11 @@ video {
   .whoweare__video {
     padding: 0px 0px 56.25% 0px;
   }
+
+  .contact-form {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1425,6 +1523,23 @@ video {
 @media (max-width: 767px) and (max-width: 20em) {
   .menu-top-header__link {
     font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .findUs__map iframe {
+    height: 400px;
+  }
+
+  .findUs__map {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+
+  .findUs__contactAndMap {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
