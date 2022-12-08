@@ -4174,6 +4174,9 @@
     box.forEach((popup => popup.addEventListener("click", (() => {
         popup.classList.toggle("active");
     }))));
+    document.querySelectorAll(".menu-top-header__link").forEach((n => n.addEventListener("click", (() => {
+        document.documentElement.classList.remove("menu-open");
+    }))));
     window["FLS"] = true;
     isWebp();
     menuInit();
