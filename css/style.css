@@ -266,7 +266,7 @@ h6 {
   bottom: 0;
   left: 0;
   background: #fafafa;
-  margin-top: 1.875rem;
+  margin-top: 7.5rem;
 }
 
 .main-products__body-cards {
@@ -306,11 +306,9 @@ h6 {
   overflow: hidden;
   -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
-  transition: -webkit-box-shadow 0.3s ease 0s;
-  -o-transition: box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 22.5%;
 }
 
@@ -586,6 +584,8 @@ h6 {
 .send-button {
   border: none;
   outline: none;
+  height: 40px;
+  border-radius: 6px;
   background-color: rgb(0, 132, 255);
   color: #fff;
   font-size: 1.2rem;
@@ -1323,15 +1323,15 @@ video {
   }
 }
 
-@media (min-width: 767px) {
-  .menu-top-header__item:not(:last-child) {
-    margin: 0px 1.25rem 0px 0px;
+@media (min-width: 375px) {
+  .main-products {
+    margin-top: 5rem;
   }
 }
 
-@media (min-width: 1023.97px) {
-  .main-products {
-    margin-top: 5rem;
+@media (min-width: 767px) {
+  .menu-top-header__item:not(:last-child) {
+    margin: 0px 1.25rem 0px 0px;
   }
 }
 
@@ -1965,16 +1965,16 @@ video {
     -webkit-box-shadow: 0px 4px 25px rgba(49, 39, 39, 0.4);
             box-shadow: 0px 4px 25px rgba(49, 39, 39, 0.4);
     border-radius: 20%;
-    -webkit-transition: border-radius 0.3s ease 0s;
-    -o-transition: border-radius 0.3s ease 0s;
-    transition: border-radius 0.3s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   .item__image:hover {
     border-radius: 25%;
-    -webkit-transition: border-radius 0.3s ease 0s;
-    -o-transition: border-radius 0.3s ease 0s;
-    transition: border-radius 0.3s ease 0s;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   .info-item__title:hover {
