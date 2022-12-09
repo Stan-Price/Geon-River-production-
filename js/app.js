@@ -259,6 +259,13 @@
             }
         }));
     }
+    function functions_menuClose() {
+        bodyUnlock();
+        document.documentElement.classList.remove("menu-open");
+    }
+    document.querySelectorAll(".menu-top-header__link").forEach((n => n.addEventListener("click", (() => {
+        functions_menuClose();
+    }))));
     function uniqArray(array) {
         return array.filter((function(item, index, self) {
             return self.indexOf(item) === index;
