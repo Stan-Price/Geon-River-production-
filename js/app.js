@@ -4210,9 +4210,6 @@
     box.forEach((popup => popup.addEventListener("click", (() => {
         popup.classList.toggle("active");
     }))));
-    document.querySelectorAll(".menu-top-header__link").forEach((n => n.addEventListener("click", (() => {
-        menuClose();
-    }))));
     window["FLS"] = true;
     isWebp();
     addTouchClass();
