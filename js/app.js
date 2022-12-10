@@ -4210,6 +4210,12 @@
     box.forEach((popup => popup.addEventListener("click", (() => {
         popup.classList.toggle("active");
     }))));
+    const play = document.querySelectorAll(".to-play");
+    play.forEach((e => {
+        e.addEventListener("click", (() => {
+            e.classList.toggle("active"), e.insertAdjacentHTML("afterbegin", `<iframe width="560" height="315"\n            src="https://www.youtube.com/embed/tEgMa_dsSTM"\n            title="YouTube video player" frameborder="0"\n            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"\n            allowfullscreen></iframe>`);
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     addTouchClass();
